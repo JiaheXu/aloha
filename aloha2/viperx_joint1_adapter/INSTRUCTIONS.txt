@@ -1,0 +1,1 @@
+The initial thickness of the adapter plate + shims from Trossen is about 5.25mm. So depending on the available thickness of the acrylic, adjust the thickness of the shims (3D printing), so that the total thickness is the same. 5.25mm
