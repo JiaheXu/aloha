@@ -1,0 +1,24 @@
+LEFT PUPPET
+udevadm info --name=/dev/ttyUSB0 --attribute-walk | grep serial
+    SUBSYSTEMS=="usb-serial"
+    ATTRS{serial}=="FT89FHQN"
+    ATTRS{serial}=="0000:c1:00.4"
+
+RIGHT PUPPET
+udevadm info --name=/dev/ttyUSB0 --attribute-walk | grep serial
+    SUBSYSTEMS=="usb-serial"
+    ATTRS{serial}=="FT891KVE"
+    ATTRS{serial}=="0000:c1:00.4"
+
+LEFT ACTOR
+udevadm info --name=/dev/ttyUSB0 --attribute-walk | grep serial
+    SUBSYSTEMS=="usb-serial"
+    ATTRS{serial}=="FT88Z1W7"
+    ATTRS{serial}=="0000:01:00.4"
+
+RIGHT ACTOR
+udevadm info --name=/dev/ttyUSB0 --attribute-walk | grep serial
+    SUBSYSTEMS=="usb-serial"
+    ATTRS{serial}=="FT88YRFN"
+    ATTRS{serial}=="0000:01:00.4"
+
